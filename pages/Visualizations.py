@@ -13,4 +13,4 @@ df = df_raw.loc[df_raw["GP"] >= df_raw["GP"].max()/2,['Goals', 'Assists', 'Point
 median = df.median(numeric_only=True)
 labels = pd.DataFrame(columns=df.columns)
 print(df_names.Player.unique())
-player_select = st.selectbox("Player", options = ["a","b"])
+player_select = st.selectbox("Player", options = df_names.Player.unique())
