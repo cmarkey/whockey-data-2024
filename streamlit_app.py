@@ -1,6 +1,12 @@
 import streamlit as st 
 import pandas as pd
 
+
+with st.sidebar:
+        st.page_link('streamlit_app.py', label='Home')
+        st.page_link('pages/Vizulizations.py', label='Vizulizations')
+
+st.title(f'Home')
 st.set_page_config(page_title="Home")
 st.markdown("# Data Evaluation App")
 
