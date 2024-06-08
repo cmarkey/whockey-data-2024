@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 
 
-#with st.sidebar:
-#        st.page_link('streamlit_app.py', label='Home')
-#        st.page_link('whockey-data-2024/pages/Vizulizations.py', label='Vizulizations')
+with st.sidebar:
+        st.page_link('streamlit_app.py', label='Home')
+        st.page_link('pages/Visualizations.py', label='Visualizations')
 
 st.title(f'Home')
 
