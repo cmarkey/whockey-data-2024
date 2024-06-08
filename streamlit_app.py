@@ -7,7 +7,7 @@ with st.sidebar:
         st.page_link('pages/Vizulizations.py', label='Vizulizations')
 
 st.title(f'Home')
-st.set_page_config(page_title="Home")
+
 st.markdown("# Data Evaluation App")
 
 st.write("We are so glad to see you here. ✨ " 
