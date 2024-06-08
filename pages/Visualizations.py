@@ -4,7 +4,7 @@ import pandas as pd
 
 #st.set_page_config(page_title="NCAA")
 
-df_raw = pd.read_csv("C:/Users/carle/Downloads/NCAA Stats 2023-2024 - Skaters.csv")
+df_raw = pd.read_csv("Data/NCAA Stats 2023-2024 - Skaters.csv")
 df_raw=df_raw.fillna(0)
 df_raw["GF"] = df_raw["Minus"]
 df_raw["GA"] = df_raw["Plus"]
