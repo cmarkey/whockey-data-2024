@@ -22,8 +22,10 @@ df_log = np.log(df[['Goals', 'Assists',
        'Points', 'Shots', 'SHG', 'ENG','PPG','Pen. Min.','GF',
        'GA']]+1)
 
+pos_select = st.selectbox("Position", options = ["All Skaters","Forwards","Defenders","Goalies"])
+player_select = st.selectbox("Player", options = df_names.Player.unique())
 #forwards
-df_forwards = df_log.loc[(df_names['Pos'] == 'F') or (df_names['Pos'] == 'D')]
+df_forwards = df_log.loc[(df_names['Pos'] == 'F') | (df_names['Pos'] == 'D')]
 means = df_forwards.mean(numeric_only=True)
 std_devs = pd.DataFrame(columns=df.columns)
 
@@ -51,6 +53,4 @@ placeholder.loc[(std_devs[column] >= 1) & (std_devs[column] < 2)] = label_list[3
 placeholder.loc[std_devs[column] >= 2] = label_list[4]
 labels[column] = placeholder    
 
-pos_select = st.selectbox("Position", options = ["All Skaters","Forwards","Defenders","Goalies"])
-player_select = st.selectbox("Player", options = df_names.Player.unique())
 
