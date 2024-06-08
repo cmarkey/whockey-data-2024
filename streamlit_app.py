@@ -4,7 +4,7 @@ import pandas as pd
 
 with st.sidebar:
         st.page_link('streamlit_app.py', label='Home')
-        st.page_link('.\pages\Vizulizations.py', label='Vizulizations')
+        st.page_link('whockey-data-2024/pages/Vizulizations.py', label='Vizulizations')
 
 st.title(f'Home')
 
